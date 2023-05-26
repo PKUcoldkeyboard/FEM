@@ -16,13 +16,13 @@ FEM 是一个基于 Taichi 实现的有限元方程求解程序，旨在通过�
 根据已知下列非齐次两点边值问题(1.2.28)
 
 $$
-\left\{\begin{array}{l}
-\boldsymbol{L} u=-\frac{\mathrm{d}}{\mathrm{d} x}\left(p \frac{\mathrm{d} u}{\mathrm{~d} x}\right)+q u=f, a<x<b, \\
+\begin{cases}
+\boldsymbol{L} u=-\frac{\mathrm{d}}{\mathrm{d} x}\left(p \frac{\mathrm{d} u}{\mathrm{~d} x}\right)+q u=f, a < x < b, \\
 u(a)=\alpha, u^{\prime}(b)=\beta,
-\end{array}\right.
+\end{cases}
 $$
 
-与下列变分问题等价：求$u_{*} \in H^1, u(a)=\alpha$，使
+与下列变分问题等价：求𝑢 ∈ 𝐻^1, 𝑢(𝑎) = 𝛼，使
 
 $$
 J(u_{*})=\min\limits_{u \in H^1 \atop u(a) = \alpha} J(u)
